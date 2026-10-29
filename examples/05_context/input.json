@@ -1,0 +1,13 @@
+{
+  "question": "那需要准备什么材料？",
+  "history": [
+    {
+      "role": "user",
+      "content": "我想了解费用报销。"
+    },
+    {
+      "role": "assistant",
+      "content": "请问你想了解哪个方面？"
+    }
+  ]
+}

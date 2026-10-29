@@ -1,0 +1,2 @@
+# Offline runtime and tests use only the Python 3.10+ standard library.
+# No third-party packages or model downloads are required.

@@ -1,0 +1,114 @@
+{
+  "mode": "offline_mock",
+  "real_model_verified": false,
+  "python_version": "3.12.14",
+  "created_at": "2026-10-29T13:48:29.865989+00:00",
+  "passed": 13,
+  "total": 13,
+  "cases": [
+    {
+      "case": "01_normal",
+      "passed": true,
+      "status": "answered",
+      "steps": 3,
+      "tool_calls": 2,
+      "errors": []
+    },
+    {
+      "case": "02_conflict",
+      "passed": true,
+      "status": "needs_clarification",
+      "steps": 4,
+      "tool_calls": 3,
+      "errors": []
+    },
+    {
+      "case": "03_outside",
+      "passed": true,
+      "status": "insufficient_evidence",
+      "steps": 2,
+      "tool_calls": 1,
+      "errors": []
+    },
+    {
+      "case": "04_paraphrase",
+      "passed": true,
+      "status": "answered",
+      "steps": 3,
+      "tool_calls": 2,
+      "errors": []
+    },
+    {
+      "case": "05_context",
+      "passed": true,
+      "status": "answered",
+      "steps": 3,
+      "tool_calls": 2,
+      "errors": []
+    },
+    {
+      "case": "06_tool_failure",
+      "passed": true,
+      "status": "tool_failed",
+      "steps": 3,
+      "tool_calls": 2,
+      "errors": []
+    },
+    {
+      "case": "07_retry_recovery",
+      "passed": true,
+      "status": "answered",
+      "steps": 4,
+      "tool_calls": 3,
+      "errors": []
+    },
+    {
+      "case": "08_missing_context",
+      "passed": true,
+      "status": "needs_clarification",
+      "steps": 1,
+      "tool_calls": 0,
+      "errors": []
+    },
+    {
+      "case": "09_changed_document",
+      "passed": true,
+      "status": "answered",
+      "steps": 3,
+      "tool_calls": 2,
+      "errors": []
+    },
+    {
+      "case": "10_step_limit",
+      "passed": true,
+      "status": "incomplete",
+      "steps": 2,
+      "tool_calls": 2,
+      "errors": []
+    },
+    {
+      "case": "11_partial_read_failure",
+      "passed": true,
+      "status": "tool_failed",
+      "steps": 5,
+      "tool_calls": 4,
+      "errors": []
+    },
+    {
+      "case": "12_single_policy",
+      "passed": true,
+      "status": "answered",
+      "steps": 3,
+      "tool_calls": 2,
+      "errors": []
+    },
+    {
+      "case": "13_empty_corpus",
+      "passed": true,
+      "status": "insufficient_evidence",
+      "steps": 3,
+      "tool_calls": 2,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "question": "出差住宿标准是什么？",
+  "status": "tool_failed",
+  "answer": "工具失败，暂时无法完成核对；已成功读取的资料已保留。",
+  "citations": [],
+  "gaps": [
+    "TOOL_UNAVAILABLE: Injected local tool failure"
+  ],
+  "mode": "offline_mock",
+  "backend": "offline-rule-mock-v1",
+  "steps": 3,
+  "tool_calls": 2,
+  "limits": {
+    "max_steps": 10,
+    "max_tool_calls": 8
+  },
+  "stop_reason": "backend_finished",
+  "read_document_ids": [],
+  "created_at": "2026-10-29T13:48:29.845919+00:00"
+}

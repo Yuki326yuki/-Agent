@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "question": "公司2027年的全球销售额目标是多少？",
+  "status": "insufficient_evidence",
+  "answer": "现有资料不足以回答这个问题，请补充相关制度或产品说明。",
+  "citations": [],
+  "gaps": [
+    "缺少与问题相符的原文证据"
+  ],
+  "mode": "offline_mock",
+  "backend": "offline-rule-mock-v1",
+  "steps": 2,
+  "tool_calls": 1,
+  "limits": {
+    "max_steps": 10,
+    "max_tool_calls": 8
+  },
+  "stop_reason": "backend_finished",
+  "read_document_ids": [],
+  "created_at": "2026-10-29T13:48:29.837892+00:00"
+}

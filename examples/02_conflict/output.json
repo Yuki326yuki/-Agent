@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "question": "报销期限是多久？",
+  "status": "needs_clarification",
+  "answer": "资料存在冲突：\nD01：费用发生后30天内提交报销申请。\nD02：费用发生后15天内提交报销申请。\n请确认适用制度或优先级后再执行。",
+  "citations": [
+    {
+      "doc_id": "D01",
+      "section_id": "S1",
+      "quote": "费用发生后30天内提交报销申请。",
+      "title": "费用报销指南",
+      "version_date": "2026-05-01",
+      "scope": "未注明适用范围及与其他制度的优先关系"
+    },
+    {
+      "doc_id": "D02",
+      "section_id": "S1",
+      "quote": "费用发生后15天内提交报销申请。",
+      "title": "财务常见问题",
+      "version_date": "2026-06-15",
+      "scope": "未注明适用范围及与其他制度的优先关系"
+    }
+  ],
+  "gaps": [
+    "未给出冲突文档的适用范围或优先关系"
+  ],
+  "mode": "offline_mock",
+  "backend": "offline-rule-mock-v1",
+  "steps": 4,
+  "tool_calls": 3,
+  "limits": {
+    "max_steps": 10,
+    "max_tool_calls": 8
+  },
+  "stop_reason": "backend_finished",
+  "read_document_ids": [
+    "D01",
+    "D02"
+  ],
+  "created_at": "2026-10-29T13:48:29.835885+00:00"
+}

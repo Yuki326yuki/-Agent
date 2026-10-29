@@ -1,0 +1,23 @@
+[
+  {
+    "step": 1,
+    "decision": {
+      "action": "finish",
+      "arguments": {
+        "status": "needs_clarification",
+        "answer": "请说明你指的是哪项制度或产品功能。",
+        "citations": [],
+        "gaps": [
+          "需要明确问题对象"
+        ]
+      },
+      "reason": "缺少可以确定问题对象的上下文"
+    },
+    "observation": {
+      "ok": true,
+      "status": "needs_clarification",
+      "verified_citations": 0
+    },
+    "next_action": "end"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "question": "那需要准备什么材料？",
+  "status": "answered",
+  "answer": "报销材料包括有效发票和审批记录。",
+  "citations": [
+    {
+      "doc_id": "D01",
+      "section_id": "S2",
+      "quote": "报销材料包括有效发票和审批记录。",
+      "title": "费用报销指南",
+      "version_date": "2026-05-01",
+      "scope": "未注明适用范围及与其他制度的优先关系"
+    }
+  ],
+  "gaps": [],
+  "mode": "offline_mock",
+  "backend": "offline-rule-mock-v1",
+  "steps": 3,
+  "tool_calls": 2,
+  "limits": {
+    "max_steps": 10,
+    "max_tool_calls": 8
+  },
+  "stop_reason": "backend_finished",
+  "read_document_ids": [
+    "D01"
+  ],
+  "created_at": "2026-10-29T13:48:29.843913+00:00"
+}

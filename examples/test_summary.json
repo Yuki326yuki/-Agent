@@ -1,0 +1,11 @@
+{
+  "mode": "offline_mock",
+  "real_model_verified": false,
+  "python_version": "3.12.14",
+  "created_at": "2026-10-29T13:48:30.200131+00:00",
+  "tests_run": 36,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true
+}

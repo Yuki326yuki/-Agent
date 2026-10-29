@@ -1,0 +1,53 @@
+{
+  "scope": "4条中文改写查询的检索对照实验",
+  "total": 4,
+  "baseline_hits": 1,
+  "expanded_hits": 4,
+  "queries": [
+    {
+      "query": "住店",
+      "expected_doc_id": "D03",
+      "baseline_ids": [],
+      "expanded_ids": [
+        "D03"
+      ],
+      "baseline_hit_at_5": false,
+      "expanded_hit_at_5": true
+    },
+    {
+      "query": "宾馆",
+      "expected_doc_id": "D03",
+      "baseline_ids": [],
+      "expanded_ids": [
+        "D03"
+      ],
+      "baseline_hit_at_5": false,
+      "expanded_hit_at_5": true
+    },
+    {
+      "query": "报账期限",
+      "expected_doc_id": "D01",
+      "baseline_ids": [
+        "D01",
+        "D02"
+      ],
+      "expanded_ids": [
+        "D01",
+        "D02",
+        "D03"
+      ],
+      "baseline_hit_at_5": true,
+      "expanded_hit_at_5": true
+    },
+    {
+      "query": "无线网",
+      "expected_doc_id": "D06",
+      "baseline_ids": [],
+      "expanded_ids": [
+        "D06"
+      ],
+      "baseline_hit_at_5": false,
+      "expanded_hit_at_5": true
+    }
+  ]
+}

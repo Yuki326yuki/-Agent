@@ -1,0 +1,10 @@
+{
+  "question": "出差住宿标准是什么？",
+  "failures": [
+    {
+      "tool": "search_documents",
+      "times": 2,
+      "retryable": true
+    }
+  ]
+}

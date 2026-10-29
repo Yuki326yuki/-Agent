@@ -1,0 +1,41 @@
+test_acceptance_01_normal (test_agent.AgentTests.test_acceptance_01_normal) ... ok
+test_acceptance_02_conflict (test_agent.AgentTests.test_acceptance_02_conflict) ... ok
+test_acceptance_03_outside (test_agent.AgentTests.test_acceptance_03_outside) ... ok
+test_acceptance_04_paraphrase (test_agent.AgentTests.test_acceptance_04_paraphrase) ... ok
+test_acceptance_05_context (test_agent.AgentTests.test_acceptance_05_context) ... ok
+test_acceptance_06_tool_failure (test_agent.AgentTests.test_acceptance_06_tool_failure) ... ok
+test_acceptance_07_retry_recovery (test_agent.AgentTests.test_acceptance_07_retry_recovery) ... ok
+test_acceptance_08_missing_context (test_agent.AgentTests.test_acceptance_08_missing_context) ... ok
+test_acceptance_09_changed_document (test_agent.AgentTests.test_acceptance_09_changed_document) ... ok
+test_acceptance_10_step_limit (test_agent.AgentTests.test_acceptance_10_step_limit) ... ok
+test_acceptance_11_partial_read_failure (test_agent.AgentTests.test_acceptance_11_partial_read_failure) ... ok
+test_acceptance_12_single_policy (test_agent.AgentTests.test_acceptance_12_single_policy) ... ok
+test_acceptance_13_empty_corpus (test_agent.AgentTests.test_acceptance_13_empty_corpus) ... ok
+test_changed_source_changes_answer_without_code_change (test_agent.AgentTests.test_changed_source_changes_answer_without_code_change) ... ok
+test_cli_works_from_a_different_directory (test_agent.AgentTests.test_cli_works_from_a_different_directory) ... ok
+test_duplicate_document_ids_fail_fast (test_agent.AgentTests.test_duplicate_document_ids_fail_fast) ... ok
+test_empty_question_requests_information (test_agent.AgentTests.test_empty_question_requests_information) ... ok
+test_fabricated_quote_is_rejected (test_agent.AgentTests.test_fabricated_quote_is_rejected) ... ok
+test_history_cannot_supply_an_uncited_fact (test_agent.AgentTests.test_history_cannot_supply_an_uncited_fact) ... ok
+test_invalid_decision_cannot_escape_step_limit (test_agent.AgentTests.test_invalid_decision_cannot_escape_step_limit) ... ok
+test_invalid_history_is_rejected (test_agent.AgentTests.test_invalid_history_is_rejected) ... ok
+test_invalid_tool_arguments_return_errors (test_agent.AgentTests.test_invalid_tool_arguments_return_errors) ... ok
+test_looping_backend_is_stopped (test_agent.AgentTests.test_looping_backend_is_stopped) ... ok
+test_missing_citation_is_rejected (test_agent.AgentTests.test_missing_citation_is_rejected) ... ok
+test_missing_document_is_a_visible_tool_error (test_agent.AgentTests.test_missing_document_is_a_visible_tool_error) ... ok
+test_mock_runs_without_network (test_agent.AgentTests.test_mock_runs_without_network) ... ok
+test_newer_date_does_not_override_conflicting_policy (test_agent.AgentTests.test_newer_date_does_not_override_conflicting_policy) ... ok
+test_nonretryable_failure_is_not_retried (test_agent.AgentTests.test_nonretryable_failure_is_not_retried) ... ok
+test_normal_answer_is_supported_by_read_original (test_agent.AgentTests.test_normal_answer_is_supported_by_read_original) ... ok
+test_retrieval_alias_improves_short_query (test_agent.AgentTests.test_retrieval_alias_improves_short_query) ... ok
+test_retry_uses_observed_failure_and_preserves_success (test_agent.AgentTests.test_retry_uses_observed_failure_and_preserves_success) ... ok
+test_tool_budget_returns_incomplete (test_agent.AgentTests.test_tool_budget_returns_incomplete) ... ok
+test_trace_links_actions_and_contains_tool_results (test_agent.AgentTests.test_trace_links_actions_and_contains_tool_results) ... ok
+test_truncated_results_do_not_claim_complete_answer (test_agent.AgentTests.test_truncated_results_do_not_claim_complete_answer) ... ok
+test_unknown_tool_is_not_executed (test_agent.AgentTests.test_unknown_tool_is_not_executed) ... ok
+test_unread_citation_cannot_be_reported_as_answered (test_agent.AgentTests.test_unread_citation_cannot_be_reported_as_answered) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 0.133s
+
+OK

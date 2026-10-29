@@ -1,0 +1,12 @@
+{
+  "status": "answered",
+  "answer_contains": [
+    "30天"
+  ],
+  "answer_excludes": [
+    "15天"
+  ],
+  "citation_ids": [
+    "D01"
+  ]
+}

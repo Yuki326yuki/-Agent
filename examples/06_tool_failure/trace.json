@@ -1,0 +1,63 @@
+[
+  {
+    "step": 1,
+    "decision": {
+      "action": "search_documents",
+      "arguments": {
+        "query": "出差住宿标准是什么？",
+        "limit": 5
+      },
+      "reason": "先检索与当前问题相关的制度或产品资料"
+    },
+    "observation": {
+      "ok": false,
+      "error": {
+        "code": "TOOL_UNAVAILABLE",
+        "message": "Injected local tool failure",
+        "retryable": true
+      }
+    },
+    "next_action": "search_documents"
+  },
+  {
+    "step": 2,
+    "decision": {
+      "action": "search_documents",
+      "arguments": {
+        "query": "出差住宿标准是什么？",
+        "limit": 5
+      },
+      "reason": "工具报告可重试错误，保留已有资料并再试一次"
+    },
+    "observation": {
+      "ok": false,
+      "error": {
+        "code": "TOOL_UNAVAILABLE",
+        "message": "Injected local tool failure",
+        "retryable": true
+      }
+    },
+    "next_action": "finish"
+  },
+  {
+    "step": 3,
+    "decision": {
+      "action": "finish",
+      "arguments": {
+        "status": "tool_failed",
+        "answer": "工具失败，暂时无法完成核对；已成功读取的资料已保留。",
+        "citations": [],
+        "gaps": [
+          "TOOL_UNAVAILABLE: Injected local tool failure"
+        ]
+      },
+      "reason": "必要工具调用失败，保留已有证据并结束"
+    },
+    "observation": {
+      "ok": true,
+      "status": "tool_failed",
+      "verified_citations": 0
+    },
+    "next_action": "end"
+  }
+]

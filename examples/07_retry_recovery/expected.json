@@ -1,0 +1,7 @@
+{
+  "status": "answered",
+  "answer_contains": [
+    "500元"
+  ],
+  "has_tool_error": true
+}

@@ -1,0 +1,12 @@
+{
+  "status": "answered",
+  "answer_contains": [
+    "650元"
+  ],
+  "answer_excludes": [
+    "500元"
+  ],
+  "citation_ids": [
+    "D03"
+  ]
+}

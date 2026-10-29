@@ -1,0 +1,41 @@
+[
+  {
+    "step": 1,
+    "decision": {
+      "action": "search_documents",
+      "arguments": {
+        "query": "公司2027年的全球销售额目标是多少？",
+        "limit": 5
+      },
+      "reason": "先检索与当前问题相关的制度或产品资料"
+    },
+    "observation": {
+      "ok": true,
+      "query": "公司2027年的全球销售额目标是多少？",
+      "hits": [],
+      "total_matches": 0
+    },
+    "next_action": "finish"
+  },
+  {
+    "step": 2,
+    "decision": {
+      "action": "finish",
+      "arguments": {
+        "status": "insufficient_evidence",
+        "answer": "现有资料不足以回答这个问题，请补充相关制度或产品说明。",
+        "citations": [],
+        "gaps": [
+          "缺少与问题相符的原文证据"
+        ]
+      },
+      "reason": "检索结果未覆盖该问题，返回资料缺口"
+    },
+    "observation": {
+      "ok": true,
+      "status": "insufficient_evidence",
+      "verified_citations": 0
+    },
+    "next_action": "end"
+  }
+]

@@ -1,0 +1,17 @@
+题号：3
+项目：企业知识问答 Agent
+GitHub URL：https://github.com/Yuki326yuki/-Agent
+最终 commit SHA：通过 git rev-parse HEAD 获取，并填写至答题框。
+
+运行模式：离线规则型Mock
+
+运行命令：
+python run.py ask "报销期限是多久？"
+python run.py evaluate
+python scripts/run_tests.py
+
+实现内容：文档检索、原文读取、决策循环、上下文追问、冲突处理、引用校验、工具失败处理及执行次数上限。
+
+验证结果：13组场景、36项自动化测试通过。输入、实际输出和Trace见examples/。
+
+待完成：真实模型接入与验证。

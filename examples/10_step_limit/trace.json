@@ -1,0 +1,65 @@
+[
+  {
+    "step": 1,
+    "decision": {
+      "action": "search_documents",
+      "arguments": {
+        "query": "出差住宿标准是什么？",
+        "limit": 5
+      },
+      "reason": "先检索与当前问题相关的制度或产品资料"
+    },
+    "observation": {
+      "ok": true,
+      "query": "出差住宿标准是什么？",
+      "hits": [
+        {
+          "doc_id": "D03",
+          "title": "员工出差住宿标准",
+          "version_date": "2026-07-15",
+          "scope": "境内出差员工",
+          "topics": [
+            "travel.lodging"
+          ],
+          "snippet": "境内出差住宿报销上限为每人每晚500元，超出部分须事前审批。",
+          "score": 18
+        }
+      ],
+      "total_matches": 1
+    },
+    "next_action": "read_document"
+  },
+  {
+    "step": 2,
+    "decision": {
+      "action": "read_document",
+      "arguments": {
+        "doc_id": "D03"
+      },
+      "reason": "读取相关文档原文，并核对是否存在不同规定"
+    },
+    "observation": {
+      "ok": true,
+      "document": {
+        "id": "D03",
+        "title": "员工出差住宿标准",
+        "version_date": "2026-07-15",
+        "scope": "境内出差员工",
+        "keywords": [
+          "出差",
+          "住宿",
+          "报销",
+          "限额"
+        ],
+        "sections": [
+          {
+            "id": "S1",
+            "topic": "travel.lodging",
+            "text": "境内出差住宿报销上限为每人每晚500元，超出部分须事前审批。"
+          }
+        ]
+      }
+    },
+    "next_action": "end"
+  }
+]

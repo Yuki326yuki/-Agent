@@ -1,0 +1,96 @@
+[
+  {
+    "step": 1,
+    "decision": {
+      "action": "search_documents",
+      "arguments": {
+        "query": "那需要准备什么材料？",
+        "limit": 5
+      },
+      "reason": "先检索与当前问题相关的制度或产品资料"
+    },
+    "observation": {
+      "ok": true,
+      "query": "那需要准备什么材料？",
+      "hits": [
+        {
+          "doc_id": "D01",
+          "title": "费用报销指南",
+          "version_date": "2026-05-01",
+          "scope": "未注明适用范围及与其他制度的优先关系",
+          "topics": [
+            "expense.deadline",
+            "expense.materials"
+          ],
+          "snippet": "费用发生后30天内提交报销申请。 报销材料包括有效发票和审批记录。",
+          "score": 4
+        }
+      ],
+      "total_matches": 1
+    },
+    "next_action": "read_document"
+  },
+  {
+    "step": 2,
+    "decision": {
+      "action": "read_document",
+      "arguments": {
+        "doc_id": "D01"
+      },
+      "reason": "读取相关文档原文，并核对是否存在不同规定"
+    },
+    "observation": {
+      "ok": true,
+      "document": {
+        "id": "D01",
+        "title": "费用报销指南",
+        "version_date": "2026-05-01",
+        "scope": "未注明适用范围及与其他制度的优先关系",
+        "keywords": [
+          "报销",
+          "期限",
+          "材料",
+          "发票"
+        ],
+        "sections": [
+          {
+            "id": "S1",
+            "topic": "expense.deadline",
+            "text": "费用发生后30天内提交报销申请。"
+          },
+          {
+            "id": "S2",
+            "topic": "expense.materials",
+            "text": "报销材料包括有效发票和审批记录。"
+          }
+        ]
+      }
+    },
+    "next_action": "finish"
+  },
+  {
+    "step": 3,
+    "decision": {
+      "action": "finish",
+      "arguments": {
+        "status": "answered",
+        "answer": "报销材料包括有效发票和审批记录。",
+        "citations": [
+          {
+            "doc_id": "D01",
+            "section_id": "S2",
+            "quote": "报销材料包括有效发票和审批记录。"
+          }
+        ],
+        "gaps": []
+      },
+      "reason": "已读取相关原文，当前检索范围内没有发现不同规定"
+    },
+    "observation": {
+      "ok": true,
+      "status": "answered",
+      "verified_citations": 1
+    },
+    "next_action": "end"
+  }
+]

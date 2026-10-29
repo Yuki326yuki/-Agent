@@ -1,0 +1,7 @@
+{
+  "status": "incomplete",
+  "stop_reason": "step_limit",
+  "read_document_ids": [
+    "D03"
+  ]
+}

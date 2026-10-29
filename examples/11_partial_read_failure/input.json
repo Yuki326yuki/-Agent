@@ -1,0 +1,11 @@
+{
+  "question": "报销期限是多久？",
+  "failures": [
+    {
+      "tool": "read_document",
+      "doc_id": "D02",
+      "times": 2,
+      "retryable": true
+    }
+  ]
+}

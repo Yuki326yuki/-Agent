@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "question": "那需要什么材料？",
+  "status": "needs_clarification",
+  "answer": "请说明你指的是哪项制度或产品功能。",
+  "citations": [],
+  "gaps": [
+    "需要明确问题对象"
+  ],
+  "mode": "offline_mock",
+  "backend": "offline-rule-mock-v1",
+  "steps": 1,
+  "tool_calls": 0,
+  "limits": {
+    "max_steps": 10,
+    "max_tool_calls": 8
+  },
+  "stop_reason": "backend_finished",
+  "read_document_ids": [],
+  "created_at": "2026-10-29T13:48:29.850937+00:00"
+}
